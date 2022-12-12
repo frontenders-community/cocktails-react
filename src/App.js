@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
+  const [selectedCocktail, setSelctedCocktail] = useState(null);
 
   useEffect(() => {
     getData();
@@ -16,14 +17,19 @@ function App() {
     setCocktails(cocktails);
   }
 
+  function handleSelectCocktail(index) {
+    setSelctedCocktail(cocktails[index]);
+  }
+
   return (
     <div>
       <div className="container">
         <Header />
         <div id="recipe">
-          {cocktails && (<Menu cocktails={cocktails} />)}
-
-          <Glass />
+          {cocktails && (
+            <Menu cocktails={cocktails} selectCocktail={handleSelectCocktail} />
+          )}
+          <Glass cocktail={selectedCocktail} />
         </div>
       </div>
     </div>

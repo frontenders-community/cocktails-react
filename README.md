@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+#Frontenders Community
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Challenge #3 - Cocktails
 
-## Available Scripts
+In questa challenge dovrete implementare un'app interattiva che permette di scoprire le ricette di alcuni dei cocktail più famosi. Al click su un cocktail presente nel menù, il bicchiere presente nella pagina dovrà riempirsi con gli ingredienti del cocktail cliccato.
 
-In the project directory, you can run:
+Il layout è abbastanza semplice, ma deve essere fatto responsive. La vera sfida sta nel disegnare il bicchiere e nell'applicare le animazioni agli ingredienti!
 
-### `npm start`
+### Starter Kit
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Nello starter kit troverte una cartella assets:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **img**: qui ci saranno le immagini utilizzate per il layout (credits: https://it.freepik.com)
+- **screenshots**: immagini del layout in versione desktop e mobile e il video con le animazioni degli ingredienti
+- **data.json**: elenco dei dati di cocktail
 
-### `npm test`
+### Consigli
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Partite analizzando la struttura dati dei data (data.json).
+Inizialmente provate a creare un layout statico di un singolo cocktail. Poi provate ad animare gli ingredienti. Solo a quel punto rendete la pagina dinamica, con i pulsanti dei cocktail e il cambio degli ingredienti in base al cocktail selezionato.
+Per leggere il file json potete usare fetch.
+**Font**: Roboto
 
-### `npm run build`
+### Tecnologie
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+HTML, CSS/SASS, React oppure JS plain.
+No librerie CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Preview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://user-images.githubusercontent.com/56634652/204822275-f7376127-5cb4-4dc4-874c-6b1ee9da02b1.mp4
