@@ -1,8 +1,9 @@
-const Menu = ({ cocktails, selectCocktail }) => {
+const Menu = ({ cocktails, selectCocktail, selectedIndex }) => {
   const cocktailsMenu = cocktails.map((cocktail, index) => (
     <li key={index}>
       <a
         href=""
+        className={index === selectedIndex ? "active" : ""}
         onClick={(e) => {
           e.preventDefault();
           selectCocktail(index);

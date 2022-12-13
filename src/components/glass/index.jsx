@@ -1,3 +1,5 @@
+import Ingredient from "../ingredient";
+
 const Glass = ({ cocktail }) => {
   function initIngredients() {
     const ingredients = cocktail.ingredients;
@@ -6,22 +8,15 @@ const Glass = ({ cocktail }) => {
       0
     );
     return cocktail.ingredients.map((ingredient, index) => {
-      const partPercentage = (ingredient.part * 100) / totalParts;
-      const reverseIndex = cocktail.ingredients.length - 1 - index;
-      const key = `${ingredient.name}-${index}`;
+      const key = `${ingredient.name.split(" ").join("-")}-${index}`;
       return (
-        <div
+        <Ingredient
           key={key}
-          className={`ingredient animated animated-${reverseIndex}`}
-          style={{
-            height: `${partPercentage}%`,
-            backgroundColor: ingredient.color,
-          }}
-        >
-          <p className="ingredient__description">
-            {ingredient.part} part of {ingredient.name}
-          </p>
-        </div>
+          ingredient={ingredient}
+          index={index}
+          totalParts={totalParts}
+          ingredientsLength={cocktail.ingredients.length}
+        />
       );
     });
   }
